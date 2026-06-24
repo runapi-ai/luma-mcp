@@ -1,0 +1,24 @@
+{
+  "catalog_models": [
+    "luma-modify-video"
+  ],
+  "actions": {
+    "luma/modify-video": {
+      "model": "Luma",
+      "endpoint": "modify_video",
+      "models": [
+        "luma-modify-video"
+      ],
+      "fields_by_model": {
+        "luma-modify-video": {
+          "prompt": {
+            "required": true
+          },
+          "source_video_url": {
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
