@@ -45,7 +45,7 @@ describe("luma stdio MCP server", () => {
 
     const tools = await client.listTools();
     const names = tools.tools.map((tool) => tool.name).sort();
-    expect(names).toEqual(["check_pricing","get_task","modify_video"]);
+    expect(names).toEqual(["check_pricing","get_task","login","modify_video"]);
 
     const pricing = await client.callTool({ name: "check_pricing", arguments: {} });
     const content = pricing.content?.[0];
