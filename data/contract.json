@@ -6,16 +6,28 @@
     "luma/modify-video": {
       "model": "Luma",
       "endpoint": "modify_video",
+      "task_type": "asynchronous",
       "models": [
         "luma-modify-video"
       ],
       "fields_by_model": {
         "luma-modify-video": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
           "source_video_url": {
+            "type": "string",
             "required": true
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "watermark": {
+            "type": "string"
           }
         }
       }

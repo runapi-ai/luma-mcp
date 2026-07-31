@@ -1,7 +1,0 @@
-{
-  "endpoints": {
-    "luma-modify-video/modify_video": {
-      "unit_price_cents": 50
-    }
-  }
-}
