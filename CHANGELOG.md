@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.3.0](https://github.com/runapi-ai/luma-mcp/releases/tag/v0.3.0) - 2026-10-15
+
+### Removed
+- Remove retired model choices from creation metadata and document historical task lookup.
+  Migration: Retired models return HTTP 410 for new requests. Query existing task IDs with the original task endpoint; no automatic replacement is applied.
+
+### Fixed
+- Use explicit retirement metadata to exclude retired media models from discovery and creation recommendations.
+  Migration: Query existing tasks with get_task. Retirement replacements are informational and do not remap model IDs.
+
+
 ## [v0.2.0](https://github.com/runapi-ai/luma-mcp/releases/tag/v0.2.0) - 2026-09-30
 
 ### Changed

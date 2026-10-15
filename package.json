@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/luma-mcp",
-  "version": "0.2.0",
-  "description": "RunAPI Luma MCP server for video generation: create tasks, poll results, and check pricing across 1 model from Claude Code, Codex, Cursor, and VS Code.",
+  "version": "0.3.0",
+  "description": "RunAPI Luma MCP server for querying historical tasks from Claude Code, Codex, Cursor, and VS Code.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -34,10 +34,7 @@
     "vscode",
     "luma",
     "luma-mcp",
-    "luma-api",
-    "video-generation",
-    "ai-video",
-    "modify-video"
+    "luma-api"
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
@@ -54,7 +51,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@runapi.ai/mcp-core": "0.5.0",
+    "@runapi.ai/mcp-core": "0.6.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {

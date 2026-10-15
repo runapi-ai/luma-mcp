@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.runapi-builder/luma-mcp",
-  "description": "RunAPI MCP server for Luma: create tasks, poll status, check pricing.",
+  "description": "RunAPI MCP server for Luma: query historical tasks.",
   "repository": {
     "url": "https://github.com/runapi-ai/luma-mcp",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@runapi.ai/luma-mcp",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "transport": {
         "type": "stdio"
       },
